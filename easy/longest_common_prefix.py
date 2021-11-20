@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         min_len = min(strs, key=len)
@@ -10,5 +11,5 @@ class Solution:
                 prefix = prefix + strs[0][i]
             else:
                 break
-            
+
         return prefix
